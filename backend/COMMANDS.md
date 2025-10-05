@@ -9,7 +9,9 @@ rails server
 ```
 
 ```cmd
-
+cd ./backend
+rails new to_do_list_app
+cd to_do_list_app
 ```
 
 ```cmd
