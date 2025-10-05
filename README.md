@@ -1,9 +1,9 @@
 <h1 align="center">
-    <a href="#" alt="Project Name">Project Name</a>
+    <a href="#" alt="Rails To-Do List">Rails To-Do List</a>
 </h1>
 
 <h3 align="center">
-    Brief description of your project
+    A task management application built with Ruby on Rails
 </h3>
 
 <p align="center">
@@ -18,7 +18,7 @@
 </p>
 
 <h4 align="center">
-    Status: In progress | Finished
+    Status: Finished
 </h4>
 
 <p align="center">
@@ -31,15 +31,18 @@
 
 ## About
 
-Description about your project and what it does.
+A comprehensive To-Do List application built with Ruby on Rails, featuring both a traditional web app and a RESTful API. This project demonstrates CRUD operations, database indexing, model validations, and Rails best practices.
 
 ---
 
 ## Features
 
--   [x] Feature One
--   [x] Feature Two
--   [ ] Feature Three (in progress)
+-   [x] Task CRUD operations (Create, Read, Update, Delete)
+-   [x] Model validations for task title
+-   [x] Database indexing for performance optimization
+-   [x] Rails web application (to_do_list_app)
+-   [x] Rails API application (to_do_list_api)
+-   [x] Comprehensive test suite
 
 ---
 
@@ -48,46 +51,65 @@ Description about your project and what it does.
 ### Pre-requisites
 
 Before you begin, you will need to have the following tools installed:
-[Git](https://git-scm.com), [Node.js](https://nodejs.org/en/).
+[Git](https://git-scm.com), [Ruby](https://www.ruby-lang.org/) (version 3.x), [Rails](https://rubyonrails.org/) (version 7.x), and [SQLite3](https://www.sqlite.org/).
 
-#### Running the project
+#### Running the Web Application
 
 ```bash
 # Clone this repository
-git clone https://github.com/efernandes-tech/scaffolds.git
+git clone https://github.com/efernandes-tech/rails-001-ef-to-do-list.git
 
 # Access the project folder
-cd scaffolds
+cd rails-001-ef-to-do-list/backend/to_do_list_app
 
 # Install dependencies
-npm install
+bundle install
+
+# Setup the database
+rails db:migrate
 
 # Run the application
-npm start
+rails server
 
 # The server will start at port: 3000 - go to http://localhost:3000
+```
+
+#### Running the API Application
+
+```bash
+# Access the API project folder
+cd backend/to_do_list_api
+
+# Install dependencies
+bundle install
+
+# Setup the database
+rails db:migrate
+
+# Run the API server
+rails server -p 3001
+
+# The API will be available at http://localhost:3001
 ```
 
 ---
 
 ## Tech Stack
 
-**Frontend:**
-
--   [React](https://reactjs.org/)
--   [TypeScript](https://www.typescriptlang.org/)
--   [Tailwind CSS](https://tailwindcss.com/)
-
 **Backend:**
 
--   [Node.js](https://nodejs.org/)
--   [Express](https://expressjs.com/)
--   [MongoDB](https://www.mongodb.com/)
+-   [Ruby on Rails](https://rubyonrails.org/) - Web framework
+-   [SQLite3](https://www.sqlite.org/) - Database
+-   [Ruby](https://www.ruby-lang.org/) - Programming language
+
+**Testing:**
+
+-   [Minitest](https://github.com/minitest/minitest) - Testing framework
 
 **Tools:**
 
 -   [Visual Studio Code](https://code.visualstudio.com/)
--   [Postman](https://www.postman.com/)
+-   [Git](https://git-scm.com/)
 
 ---
 
