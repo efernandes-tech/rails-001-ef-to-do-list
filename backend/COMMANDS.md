@@ -35,7 +35,10 @@ rails db:migrate
 ```
 
 ```cmd
-
+cd ./backend
+rails new to_do_list_api --api
+cd to_do_list_api
+rails server
 ```
 
 ```cmd
